@@ -127,7 +127,24 @@ del set3
 print("After using del: ",set3)
 
 # Tuple 
-
+fruits = {"apple", "banana", "cherry","mango", "papaya"}
+print(fruits)
+print(len(fruits))
+# print(fruits[0:5])
+if "apple" in fruits:
+  print("Eat it...!!!")
+f=list(fruits)
+f[2]="mandarins"
+fruits=tuple(f)
+print(fruits)
+f=list(fruits)
+f.append("strawberry")
+fruits=tuple(f)
+print(fruits)
+f.remove("apple")
+del fruits
+print(fruits) 
 
 # List 
+
 # Dictionary
